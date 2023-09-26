@@ -1,0 +1,32 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+
+  background: $main-background;
+  z-index: 2;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  opacity: 0;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__icon {
+    background-image: url('../assets/icons/Icon-close.png');
+  }
+
+  &__bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,59 @@
+.nav {
+  position: relative;
+  top: 7px;
+
+  &--desc {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    &--menu {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+
+    &-last {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    color: $main-black;
+    letter-spacing: -0.16px;
+
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    &-last {
+      color: $main-orange;
+      font-weight: 500;
+      line-height: 100%; /* 16px */
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon {
+    background-image: url('../assets/icons/Icon-phone.png');
+    background-repeat: no-repeat;
+  }
+}
