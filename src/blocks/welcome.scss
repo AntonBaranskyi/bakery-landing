@@ -95,9 +95,23 @@
     grid-column: 1/-1;
     margin: 0 auto;
 
-    img {
+    &:hover {
+      background-color: $main-orange;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: $dark-orange;
+      border: 2px solid $dark-orange;
+    }
+
+    &__img {
       height: $icon-size;
       width: $icon-size;
+
+      &:hover {
+        fill: white;
+      }
     }
 
     @media (min-width: 1160px) {
@@ -113,4 +127,8 @@
   &-margin {
     margin-bottom: 104px;
   }
+}
+
+.welcome__button:hover .welcome__button__img {
+  filter: brightness(0) invert(1);
 }

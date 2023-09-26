@@ -42,3 +42,11 @@
 .grid {
   @include pageGrid();
 }
+
+@mixin hover($prop, $toValue) {
+  transition: #{$prop} 0.3s;
+
+  &:hover {
+    #{$prop}: $toValue;
+  }
+}

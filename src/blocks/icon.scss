@@ -1,4 +1,5 @@
-.icon{
-    height: $icon-size;
-    width: $icon-size;
+.icon {
+  height: $icon-size;
+  width: $icon-size;
+  @include hover(transform, scale(1.2));
 }

@@ -21,6 +21,8 @@
 
   &__logo {
     padding-top: 16px;
+
+    @include hover(transform, scale(1.2));
   }
 
   &__icons {
